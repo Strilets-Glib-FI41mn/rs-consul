@@ -554,6 +554,8 @@ mod tests {
                 Notes: None,
                 Status: Some("passing".to_string()),
                 ServiceID: Some(service_id(&new_service_name)),
+                Http: None,
+                Interval: None,
                 Definition: HashMap::new(),
             },
             RegisterEntityCheck {
@@ -563,6 +565,8 @@ mod tests {
                 Notes: None,
                 Status: Some("passing".to_string()),
                 ServiceID: None,
+                Http: None,
+                Interval: None,
                 Definition: HashMap::new(),
             },
         ]

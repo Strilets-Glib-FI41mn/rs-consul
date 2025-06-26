@@ -392,6 +392,12 @@ pub struct RegisterEntityCheck {
     /// the check is treated as a node level check
     #[serde(skip_serializing_if = "Option::is_none")]
     pub ServiceID: Option<String>,
+    /// http if exists
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub Http: Option<String>,
+    /// interval
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub Interval: Option<String>,
     /// Details for a TCP or HTTP health check.
     #[serde(skip_serializing_if = "HashMap::is_empty")]
     pub Definition: HashMap<String, String>,
